@@ -1,6 +1,10 @@
 #!/usr/bin/sh
 
+folder="styles"
+
 filename="-style.css"
+
+validator="w3c_validator"
 
 last=1
 
@@ -26,12 +30,12 @@ finally() {
 
 trap finally EXIT
 
-while [ -f "$last$filename" ]; do
+while [ -f "$folder/$last$filename" ]; do
 	last=$((last + 1))
 done
 
-prev_file="$((last - 1))$filename"
-current_file="$last$filename"
+prev_file="$folder/$((last - 1))$filename"
+current_file="$folder/$last$filename"
 
 if [ "$last" -eq 0 ]; then
 	touch "$current_file"
@@ -42,7 +46,7 @@ else
 	if [ "${1:-}" = "-bypass" ]; then
 		w3c="bypassed"
 	else
-			if /usr/local/bin/htmlhint "$prev_file" > /dev/null 2>&1; then
+			if $validator "$prev_file" > /dev/null 2>&1; then
 				w3c="passed"
 			else
 				if [ "$(head -n 1 "$prev_file")" = "placeholder" ]; then
@@ -57,3 +61,5 @@ else
 		methode="copied"
 		from="$prev_file"
 	fi
+
+sed -i 's|href="styles/[0-9]*-style\.css"|href="'"$current_file"'"|' index.html
