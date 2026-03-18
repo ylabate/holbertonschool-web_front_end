@@ -1,8 +1,8 @@
 #!/usr/bin/sh
 
-filename="-index.html"
+filename="-style.css"
 
-last=0
+last=1
 
 w3c="ignored"
 
@@ -20,7 +20,7 @@ finally() {
 	else
 		printf "w3c %s | %s %s from %s\n"  "$w3c" "$current_file" "$methode" "$from"
 	fi
-	
+
 	exit $((exit_status))
 }
 
