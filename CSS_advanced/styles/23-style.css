@@ -521,7 +521,7 @@ ul.row {
 	clear: both;
 }
 
-[class^='col-'] {
+[class*='col-'] {
 	float:left;
 	padding: 0.5rem;
 }
@@ -548,7 +548,7 @@ ul.row {
 	--text-color: var(--color-white);
     --section-title-color: var(--color-white);
     
-    background: var(--color-black);
+    background-color: var(--color-black);
 }
 
 
