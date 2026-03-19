@@ -36,17 +36,13 @@ body {
 	line-height: var(--line-height-base);
 }
 
-a {
+a:link {
 	color: #161616;
 	text-decoration: none;
-	
-	&:link {
-		&:visited {font-style: italic;}
-		&:hover {text-decoration: underline;}
-		&:active {background-color: var(--color-light-grey);}
-	}
 }
-
+a:visited {font-style: italic;}
+a:hover {text-decoration: underline;}
+a:active {background-color: var(--color-light-grey);}
 
 .visually-hidden {
 	display: none;
