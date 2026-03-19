@@ -40,7 +40,7 @@ a {
 	color: #161616;
 	text-decoration: none;
 	
-	&:any-link {
+	&:link {
 		&:visited {font-style: italic;}
 		&:hover {text-decoration: underline;}
 		&:active {background-color: var(--color-light-grey);}
