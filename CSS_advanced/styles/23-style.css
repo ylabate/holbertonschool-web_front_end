@@ -544,6 +544,14 @@ ul.row {
 	text-align: right;
 }
 
+[data-section-theme="dark"] {
+	--text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    
+    background-color: var(--color-black);
+}
+
+
 .footer-address {
 	color: var(--text-color);
 }
@@ -554,11 +562,4 @@ ul.row {
 
 .social-link svg {
 	fill: var(--text-color);
-}
-
-[data-section-theme="dark"] {
-	--text-color: var(--color-white);
-    --section-title-color: var(--color-white);
-    
-    background-color: var(--color-black);
 }
