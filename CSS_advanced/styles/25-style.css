@@ -390,7 +390,7 @@ template {
 	--button-display: inline-block;
 	--button-padding: 1.5rem 3rem;
 	--button-border: 0.2rem solid var(--color-primary);
-	--button-color: var(--color-black)
+	--button-color: var(--color-black);
 	--button-text-decoration: none;
 	--button-font-size: var(--font-size-large);
 	--button-hover-color: var(--color-white);
@@ -429,16 +429,16 @@ a:active {
 	background-color: var(--color-light-grey);
 }
 
-button {
+.button {
 	display: var(--button-display);
 	padding: var(--button-padding);
-	border-style: var(--button-border);
+	border: var(--button-border);
 	font-size: var(--button-font-size);
 	color: var(--button-color);
-	text-decoration: var(--button-hover-text-decoration);
+	text-decoration: var(--button-text-decoratio);
 }
 
-button:hover {
+.button:hover {
 	color: var(--button-hover-color);
 	text-decoration: var(--button-hover-text-decoration);
 	background: var(--button-hover-background);
@@ -571,7 +571,7 @@ ul.row {
 [data-section-theme="dark"] {
 	--text-color: var(--color-white);
     --section-title-color: var(--color-white);
-    --button-color: var(--color-white)
+    --button-color: var(--color-white);
     
     background-color: var(--color-black);
 }
