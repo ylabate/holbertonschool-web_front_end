@@ -357,10 +357,8 @@ template {
 	--color-light-grey: #f3f3f3;
 	--color-dark-grey: #353535;
 	--text-color: var(--color-black);
-	--font-family-base:
-		"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	--font-family-title:
-		Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-size-small: 1.2rem;
 	--font-size-medium: 1.6rem;
 	--font-size-large: 1.8rem;
@@ -384,15 +382,13 @@ template {
 	--nav-item-font-family: var(--font-family-title);
 	--nav-item-font-weight: var(--font-weight-bold);
 	--nav-item-font-size: var(--font-size-medium);
-	--nav-item-letter-spacing: .04rem;
+	--nav-item-letter-spacing: 0.04rem;
 	--nav-item-display: inline-block;
-	--nav-item-margin: 0 0 3rem 0;
+	--nav-item-margin: 3rem 0;
 	--nav-item-link-hover: var(--color-primary);
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
@@ -470,12 +466,7 @@ a:active {
 	margin-right: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-family-title);
 	font-weight: var(--font-weight-bold);
 }
@@ -515,4 +506,3 @@ h6 {
 .nav .nav-link:hover {
 	color: var(--nav-item-link-hover);
 }
-
