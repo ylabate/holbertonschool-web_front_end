@@ -40,9 +40,11 @@ a {
 	color: #161616;
 	text-decoration: none;
 	
-	&:visited {font-style: italic;}
-	&:hover {text-decoration: underline;}
-	&:active {background-color: var(--color-light-grey);}
+	&:any-link {
+		&:visited {font-style: italic;}
+		&:hover {text-decoration: underline;}
+		&:active {background-color: var(--color-light-grey);}
+	}
 }
 
 
