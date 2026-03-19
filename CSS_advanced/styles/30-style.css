@@ -689,7 +689,7 @@ ul.row {
 	z-index: 1;
 }
 
-.card-inner:hover .card-inner {
+.card-work:hover .card-inner {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
