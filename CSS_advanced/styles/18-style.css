@@ -484,6 +484,10 @@ h6 {
 	float: right;
 }
 
+.footer {
+	padding: var(--footer-padding);
+}
+
 .nav {
 	margin: 0;
 	padding: 0;
@@ -508,10 +512,7 @@ h6 {
 	padding-left: 1rem;
 }
 
-.nav-link:hover {
+.nav .nav-link:hover {
 	color: var(--nav-item-link-hover);
 }
 
-.footer {
-	padding: var(--footer-padding);
-}
