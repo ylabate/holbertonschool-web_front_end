@@ -377,7 +377,7 @@ template {
 	--section-header-align: center;
 	--section-tagline-transform: uppercase;
 	--section-title-margin: 0;
-	--section-title-color: var(--color-black)
+	--section-title-color: var(--color-black);
 	--section-padding: 5rem 0;
 	--section-header-padding: 0 0 3rem;
 	--section-body-padding: 0 0 3rem;
@@ -434,7 +434,7 @@ a:active {background-color: var(--color-light-grey);}
 
 .section-footer {
 	padding: var(--section-footer-padding);
-	justify-content: var(--section-footer-align);
+	text-align: var(--section-footer-align);
 }
 
 .section-title {
@@ -458,12 +458,11 @@ a:active {background-color: var(--color-light-grey);}
 	margin-right: auto;
 }
 
-.footer {
-	padding: var(--footer-padding);
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-family-title);
 	font-weight: var(--font-weight-bold);
 }
 
+.footer {
+	padding: var(--footer-padding);
+}
